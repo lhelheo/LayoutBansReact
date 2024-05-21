@@ -6,7 +6,8 @@ import './index.css'
 import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import Home from './routes/Home.tsx'
 import Empresa from './routes/Empresa.tsx'
-import Contato from './routes/Contato.tsx'
+import Upload from './routes/Upload.tsx'
+import Novareuniao from './routes/Novareuniao.tsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -14,7 +15,8 @@ const router = createBrowserRouter([
     children: [
       { path: 'home', element: <Home /> },
       { path: 'empresa', element: <Empresa /> },
-      { path: 'contato', element: <Contato /> },
+      { path: 'upload', element: <Upload /> },
+      { path: 'novareuniao', element: <Novareuniao /> },
     ],
   },
 ])

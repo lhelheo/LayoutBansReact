@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 :root {
-    font-family: 'Roboto Light', Courier, monospace;
+    font-family: 'Arial', Courier, monospace;
 }
+
+/* Utilizar Roboto depois */

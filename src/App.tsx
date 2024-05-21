@@ -9,7 +9,7 @@ function App() {
 
   return (
       <div className="flex h-screen">
-        <Outlet />
+       
         <div className="flex-auto bg-gradient-to-r from-slate-200 to-white border-r-2 shadow-2xl px-10">
           <p className="text-black text-2xl p-4">Logomarca</p>
 
@@ -23,16 +23,16 @@ function App() {
             
             <div className={btnStyle}>
               <HiPlus className="mr-4"/>
-                <p className="flex items-end">Nova Reunião</p>
+                <p className="flex items-end font-medium">Nova Reunião</p>
             </div>
             
             <div className={btnStyle}>
               <HiArrowUpTray className="mr-4"/>
-                <p className="flex items-end">Upload de Reunião</p>
+                <p className="flex items-end font-medium">Upload de Reunião</p>
             </div>
             <div className={btnStyle}>
               <HiCalendarDays className="mr-4"/>
-              <p className="flex items-end">Agendar Reunião</p>
+              <p className="flex items-end font-medium">Agendar Reunião</p>
             </div>
           </div>
 
@@ -43,18 +43,20 @@ function App() {
 
           <div className={btnStyle}>
             <HiClock className="mr-4"/>
-            <p className="flex items-end">Histórico de Reuniões</p>  
+            <p className="flex items-end font-medium">Histórico de Reuniões</p>  
           </div>
           
           <div className={btnStyle}>
             <HiMiniWrench className="mr-4"/>
-              <p className="flex items-end">Configurações</p>
+              <p className="flex items-end font-medium">Configurações</p>
           </div>
           </div>
 
         </div>
         <div className="flex-auto">
-          <p className="text-black text-2xl p-4 w-[1500px]">Segunda Área</p>
+          <p className="text-black text-2xl p-4 w-[1500px]">
+            <Outlet />
+          </p>
         </div>
       </div>
   );
